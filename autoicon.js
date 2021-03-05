@@ -1,13 +1,15 @@
-function updateIcon() {
-
 var e = entry();
-var uri = e.field("IconJS");
+
+function updateIcon(_e) {
+
+
+var uri = _e.field("IconJS");
 
 
 uri = uri.replace("[", "");
 uri = uri.replace("]", "");
 
-e.set("Icon", uri);
+_e.set("Icon", uri);
 
 message("Icon updated");
   
