@@ -9,5 +9,6 @@ uri = uri.replace("]", "");
 
   e.set("Icon", uri);
 
+message("Icon updated");
   
 }
