@@ -1,4 +1,4 @@
-function countActiveLinks(e) {
+function countActiveLinks2(e) {
 	var tasklib = libByName("𝗔𝟰160    Assignments");
 	var links = tasklib.linksTo(e);
 	var counter = "Active Links";
