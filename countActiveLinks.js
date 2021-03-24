@@ -10,7 +10,7 @@ var maxPriorityLevel = 0;
 for (var i = 0; i < total; i++) {
 
   var status = links[i].field("✔ Status");
-  var priority = links[i].field("🌟 Priority");
+  var priority = links[i].field("Priority");
 
   if (status == "⑤  Incomplete" || status == "⑥  Ongoing")
     numActive++
