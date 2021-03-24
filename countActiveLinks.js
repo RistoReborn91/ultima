@@ -15,7 +15,7 @@ for (var i = 0; i < total; i++) {
   if (status == "⑤  Incomplete" || status == "⑥  Ongoing")
     numActive++
 
-  if (priority > maxPriorityLevel);
+  if (priority > maxPriorityLevel)
 	maxPriorityLevel = priority;
   
 }
