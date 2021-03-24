@@ -12,11 +12,13 @@ function countActiveLinks2(e) {
 	  var status = links[i].field("✔ Status");
 	  var priority = links[i].field("Priority");
 
-	  if (status == "⑤  Incomplete" || status == "⑥  Ongoing")
+	  if (status == "⑤  Incomplete" || status == "⑥  Ongoing") {
 		numActive++
 
 	  if (priority > maxPriorityLevel)
 		maxPriorityLevel = priority;
+	
+	  }
 	  
 	}
 
