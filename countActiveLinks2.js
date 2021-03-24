@@ -1,11 +1,11 @@
-function countActiveLinks(e) {
+function countActiveLinks2(e) {
 	var tasklib = libByName("𝗔𝟰160    Assignments");
 	var links = tasklib.linksTo(e);
 	var counter = "Active Links";
 	var total = links.length;
 	var numActive = 0;
 
-	// var maxPriorityLevel = 0;
+	var maxPriorityLevel = 0;
 
 	for (var i = 0; i < total; i++) {
 
@@ -15,17 +15,16 @@ function countActiveLinks(e) {
 	  if (status == "⑤  Incomplete" || status == "⑥  Ongoing")
 		numActive++
 
-/*
 	  if (priority > maxPriorityLevel)
 		maxPriorityLevel = priority;
-*/	  
+	  
 	}
 
 	e.set("Active Links", numActive);
 	e.set("Total Links", total);
-	// e.set("Max Priority Level", maxPriorityLevel);
+	e.set("Max Priority Level", maxPriorityLevel);
 	
-	// message(maxPriorityLevel  + " MPL");
+	message(maxPriorityLevel  + " MPL");
 
 	// message(numActive + " active links");
 
