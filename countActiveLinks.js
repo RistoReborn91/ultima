@@ -24,7 +24,7 @@ function countActiveLinks(e) {
 	e.set("Total Links", total);
 	e.set("Max Priority Level", maxPriorityLevel);
 	
-	message(maxPriorityLevel  + "MPL");
+	message(maxPriorityLevel  + " MPL");
 
 	// message(numActive + " active links");
 
