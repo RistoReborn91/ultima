@@ -28,7 +28,7 @@ var links = tasklib.linksTo(e);
 	e.set(fldLinks, numLinks);
 	e.set(fldTotalScore, totalScore);
 	
-	message("CIBARIA: " + numLinks + " links • " + totalScore + " hits" );
+	// message("CIBARIA: " + numLinks + " links • " + totalScore + " hits" );
 
 	// message(numActive + " active links");
 
