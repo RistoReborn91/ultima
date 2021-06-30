@@ -1,0 +1,29 @@
+function CalcTotalFromLinked(e, destinationField, linkedDBName, linkedField) {
+
+	var linkedDB = libByName(linkedDBName);
+	
+	var links = linkedDB.linksTo(e);
+
+	var totalScore = 0;
+
+	for (var i = 0; i < links.length; i++) {
+
+
+		totalScore += links[i].field(linkedField);
+	
+	 }
+	  
+	
+
+	e.set(destinationField, totalScore);
+	
+	// message("CIBARIA: " + numLinks + " links • " + totalScore + " hits" );
+
+	// message(numActive + " active links");
+
+
+}
+
+
+
+CalcTotalFromLinked(e, "Total", "𝗜𝗡𝗩𝗖230    Billables", "Total");
